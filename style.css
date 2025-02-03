@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f0f0;
+}
+header {
+    background-color: #d63384;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+.slider {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 6s infinite alternate;
+}
+.slide {
+    width: 33.33%;
+    padding: 10px;
+}
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    50% { transform: translateX(-33.33%); }
+    100% { transform: translateX(-66.66%); }
+}
+.services {
+    margin: 20px;
+}
+.service-btn {
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+.contact {
+    background-color: white;
+    padding: 20px;
+}
+input, button {
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+}
+button {
+    background-color: #d63384;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

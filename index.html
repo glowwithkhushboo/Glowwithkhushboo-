@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makeup Artist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Makeup Studio</h1>
+    </header>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="images/bridal.jpg" alt="Bridal Makeup"><p>Bridal Makeup</p></div>
+            <div class="slide"><img src="images/facial.jpg" alt="Facial"><p>Facial</p></div>
+            <div class="slide"><img src="images/makeover.jpg" alt="Makeover"><p>Complete Makeover</p></div>
+        </div>
+    </div>
+
+    <section class="services">
+        <h2>Select Your Makeup Service</h2>
+        <button class="service-btn" data-service="Bridal Makeup">Bridal Makeup</button>
+        <button class="service-btn" data-service="Facial">Facial</button>
+        <button class="service-btn" data-service="Complete Makeover">Complete Makeover</button>
+    </section>
+
+    <section class="contact">
+        <h2>Book an Appointment</h2>
+        <form id="bookingForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="text" id="service" placeholder="Selected Service" readonly>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
